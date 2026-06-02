@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학습지 다운로드</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+      background: #f5f7fa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 2.5rem 2rem;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #1a1a2e;
+      margin-bottom: 0.4rem;
+    }
+
+    p.subtitle {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      border: 1px solid #e8eaf0;
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .card-info .subject {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-info .title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.55rem 1.1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.15s;
+    }
+
+    .btn:hover { opacity: 0.85; }
+
+    .btn-math {
+      background: #4361ee;
+      color: #fff;
+    }
+
+    .btn-history {
+      background: #e63946;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>학습지 다운로드</h1>
+    <p class="subtitle">아래 버튼을 눌러 학습지를 내려받으세요.</p>
+
+    <div class="card">
+      <div class="card-info">
+        <div class="subject">수학</div>
+        <div class="title">1차함수 학습지</div>
+      </div>
+      <a class="btn btn-math" href="1차함수_수학_학습지.docx" download>다운로드</a>
+    </div>
+
+    <div class="card">
+      <div class="card-info">
+        <div class="subject">역사</div>
+        <div class="title">조선 역사 학습지</div>
+      </div>
+      <a class="btn btn-history" href="조선_역사_학습지.docx" download>다운로드</a>
+    </div>
+
+    <footer>학습지를 클릭하면 .docx 파일로 저장됩니다.</footer>
+  </div>
+</body>
+</html>
